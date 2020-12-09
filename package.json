@@ -1,7 +1,8 @@
 {
-  "name": "smart-tools",
+  	"name": "smart-tools",
 	"displayName": "Smart Tool Creation",
 	"description": "Extension to automate the creation of ReactJs page and component files",
+	"publisher":"AndreiGonalves",
 	"version": "0.0.1",
 	"author": {
 		"name": "Andrei Gonçalves",
