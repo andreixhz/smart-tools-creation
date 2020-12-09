@@ -10,13 +10,17 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:smart-tools.CreatePage"
+		"onCommand:smart-tools.CreatePage",
+		"onCommand:smart-tools.CreateComponent"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [{
             "command": "smart-tools.CreatePage",
             "title": "Create Page"
+		},{
+            "command": "smart-tools.CreateComponent",
+            "title": "Create Component"
 		}]
 	},
 	"scripts": {
