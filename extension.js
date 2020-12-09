@@ -1,5 +1,6 @@
 const vscode = require('vscode');
 const Create = require('./src/FileManager');
+const GetText = require('./src/GetText');
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -13,11 +14,12 @@ function activate(context) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with  registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('smart-tools.CreatePage', function () {
-		// The code you place here will be executed every time your command is executed
+	let disposable = vscode.commands.registerCommand('smart-tools.CreatePage', function () {		
+		GetText((e) => Create(0, e));
+	});
 
-		Create(2);
-		vscode.window.showInformationMessage('Hello World from Smart Tools!');
+	disposable = vscode.commands.registerCommand('smart-tools.CreateComponent', function () {
+		GetText((e) => Create(1, e));
 	});
 
 	context.subscriptions.push(disposable);
