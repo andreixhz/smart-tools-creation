@@ -1,13 +1,25 @@
 {
   "name": "smart-tools",
-	"displayName": "Smart Tools",
-	"description": "easy and fast creation pages and components",
+	"displayName": "Smart Tool Creation",
+	"description": "Extension to automate the creation of ReactJs page and component files",
 	"version": "0.0.1",
+	"author": {
+		"name": "Andrei Gonçalves",
+		"email": "andreixhz123@gmail.com",
+		"url": "https://andreixhz.github.io"
+	},
+	"repository": {
+		"url": "https://github.com/andreixhz/smart-tools-creation",
+		"type": "git"
+	},
 	"engines": {
 		"vscode": "^1.51.0"
 	},
 	"categories": [
 		"Other"
+	],
+	"tags":[
+		"react", "page", "component", "automatization creation", "automatization", "Extension"
 	],
 	"activationEvents": [
 		"onCommand:smart-tools.CreatePage",
