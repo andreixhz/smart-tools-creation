@@ -5,8 +5,8 @@ module.exports = {
         "/style.css"
     ],
     "type":[
-        "page/",
-        "component/"
+        "pages/",
+        "components/"
     ],
     "data":`import React from 'react';
 import './styles.css';
