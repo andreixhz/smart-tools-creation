@@ -3,7 +3,7 @@
 	"displayName": "Smart Tool Creation",
 	"description": "Extension to automate the creation of ReactJs page and component files",
 	"publisher":"AndreiGonalves",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": {
 		"name": "Andrei Gonçalves",
 		"email": "andreixhz123@gmail.com",
