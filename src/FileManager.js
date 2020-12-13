@@ -5,7 +5,8 @@ const fs = require("fs");
 
 async function Create(type, name){
 
-    const path = await GetPath();
+    const workspace = await GetPath();
+    const path = convertToDir(workspace.toString());
     const main = path + Data.main;
     const target = main + Data.type[type];
 
@@ -26,5 +27,12 @@ async function Create(type, name){
     vscode.window.showInformationMessage("Created with sucess: " + name);
 
 }
+
+function convertToDir(file){
+	if(file.includes("file"))
+		return file.replace("file:///c%3A", "c:");
+	return file;
+}
+
 
 module.exports = Create;

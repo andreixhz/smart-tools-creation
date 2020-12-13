@@ -8,21 +8,13 @@ async function GetPath() {
     }
 
     if (vscode.workspace.workspaceFolders.length === 1) {
-        return {
-            path: vscode.workspace.workspaceFolders[0].uri,
-            type: 'workspace'
-        };
+        return vscode.workspace.workspaceFolders[0].uri
     } else {
         const ws = await vscode.window.showWorkspaceFolderPick();
-
         if(!ws) {
             return undefined;
         }
-
-        return {
-            path: ws.uri,
-            type: 'workspace'
-        };
+        return ws.uri
     }
 }
 
