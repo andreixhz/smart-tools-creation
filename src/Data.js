@@ -9,13 +9,13 @@ module.exports = {
         "components/"
     ],
     "data":`import React from 'react';
-import './styles.css';
+import './style.css';
 
 function TEMP_NAME () {
     return (
-        <div className={TEMP_NAME}>
+        <div className="TEMP_NAME">
             <h1>TEMP_NAME</h1>
-        </dib>
+        </div>
     );
 }
 
