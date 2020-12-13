@@ -9,10 +9,6 @@ async function Create(type, name){
     const main = path + Data.main;
     const target = main + Data.type[type];
 
-    console.log(target);
-    console.log(main);
-    console.log(path);
-
     if (!fs.existsSync(main))
         fs.mkdirSync(main);
 
